@@ -1,3 +1,4 @@
+require('dotenv');
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 5674;
@@ -6,12 +7,18 @@ const showData = [
     { name: "Sunil", role: "sub-admin", occupation: "Software Tester" }
 ]
 
+
+console.log(process.env.PORT);
+console.log(process.env.MONGODB_URI);
+console.log(process.env.SECRET_KEY);
+
 app.get('/', (req, res) => {
     res.status(200).send("Welcome to node js app deployment over the EC2 instances...");
     console.log("home page accessed...");
     res.end();
 
 })
+
 
 
 
