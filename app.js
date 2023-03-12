@@ -25,11 +25,8 @@ app.get('/products', (req, res) => {
 
 })
 
-app.get('/vishal', (req, res) => {
-    res.status(200).send("Vishal is getting accessed...");
-    console.log("vishal page accessed...")
-    res.end();
-
+app.get('/ram-ram', (req, res) => {
+    res.status(200).send("Jai Shree Ram...");
 })
 
 
