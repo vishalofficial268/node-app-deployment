@@ -47,6 +47,8 @@ app.all('*', (req, res) => {
 });
 
 
+//added comments just to check the git scenarios:::::
+
 app.listen(PORT, () => {
     console.log(`server running at http://localhost:${PORT}`);
 })
